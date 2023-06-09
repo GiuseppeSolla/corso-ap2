@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cover {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #222;
+  background: url(../img/glass.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  height: 300px;
+  padding: 35px;
+  border: 1px solid rgba(255,255,255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.45);
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(12px);
+}

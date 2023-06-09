@@ -1,0 +1,355 @@
+/*---- foints -----------------------------------------------------------------------------------*/
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
+/*---- clearfix ---------------------------------------------------------------------------------*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body{	height:100%; margin: 0;	padding: 0; }
+
+
+/*---- Generale ---------------------------------------------------------------------------------*/
+body{
+	background: #eee;
+	font-family: 'Montserrat', Arial;
+}
+
+/*---- Header ----------------------------------------------------------------------------------*/
+.header{background: #00376090;}
+.header__logo{
+	font-size: 18px; 
+	text-transform: uppercase; 
+	color:#fff; 
+	float:left; 
+	display: block; 
+	text-decoration: none;
+	padding: 22px 20px 18px 24px;
+}
+.header__logo:hover{color:white;}
+.header__logo span{color:yellow; font-weight: bold;}
+.header__menu{float:right;margin:0; padding:0; margin-right: 12px;z-index: 1;}
+.header__menu__item{display: inline-block;}
+.header__menu__item a{color:#fff;display: block;padding:22px 18px;text-decoration: none;transition: .3s;}
+.header__menu__item a:hover{background: #00477d;}
+.header__menu__item--visited{background: #00477d;}
+
+.header__menu__login {
+	display: inline-block;
+}
+.header__menu__login a {
+	text-decoration: none;
+	color: #fff;
+	background-color: rgb(130, 18,227);
+	display: block;
+	padding: 10px 18px;
+	transition: .3s;
+	border: 1px solid #fff;
+	margin-left: 12px;
+	margin-right: 24px;
+	border-radius: 20px;
+}
+.header__menu__login a:hover {
+background-color: #db09bf;
+}
+
+.header--single {background-color: #0082e6 !important;}
+
+/* hamburger 
+.header__icon-bar{float: right; padding: 10px; display: none;height: 50px;width: 50px;}
+.header__icon-bar span{height: 2px; width: 30px;background: #fff;position: relative;display: block;margin-top: 12px;transition: all 0.2s cubic-bezier(.215, .61, .355, 1);}
+.header__icon-bar-x1 {transform: rotate(45deg) translateY(9px);}
+.header__icon-bar-x2 {transform: rotate(-45deg) translateY(-9px);}
+*/
+
+/*---- Cover -----------------------------------------------------------------------------------*/
+.cover {
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+		url("../images/photo-1.jpg") no-repeat center center scroll;
+	background-size: cover;
+	position: relative;
+}
+.cover__caption {display: table; height: 100%; width: 100%; position: relative; padding: 0 20px; z-index: 1;}
+.cover__caption__copy {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+}
+.cover__caption__copy h1 { font-size: 50px; }
+.button {
+	background: #fff;
+	color: #333;
+	padding: 15px 30px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: .3s;
+	display: inline-block;
+	margin-top: 30px;
+	border-radius: 25px;
+}
+.button:hover{
+	background-color: #0082e6; color: #fff;
+}
+
+.cover--single { height: 40%;}
+
+.cover--contatti{height: 40%;}
+
+
+
+/*---- Cards -----------------------------------------------------------------------------------*/
+.cards{ max-width: 1200px; margin: 40px auto;}
+.card {
+	width: 30%;
+	margin: 0 1.5%;
+	background-color: #fff;
+	float: left;
+	border: 1px solid #ccc;
+	transition: .3s;
+	box-shadow: 1px 1px 4px 1px #ccc;
+}
+.card__image {width: 100%; height: auto;}
+.card__copy {padding: 5px 20px;}
+.card:hover { transform: scale(1.04);}
+.card__button {
+	background-color: #0082e6;
+	color: #fff;
+	padding: 4px 18px;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 12px;
+	display: inline-block;
+}
+.card__button:hover {
+	background-color: #00477d;
+}
+
+/*---- Banner ----------------------------------------------------------------------------------*/
+.banner {
+	background: transparent;
+	height: 40%;
+}
+.banner__image {
+	width: 50%;
+	float: left;
+	height: 100%;
+	background-image: url('../images/photo-4.jpg');
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+}
+.banner__copy{
+	width: 50%;
+	float: left;
+	height: 100%;
+	display: table;
+	background-color: #151515;
+	color: #fff;
+}
+.banner__copy__text{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 30px;
+}
+.banner__copy__text h3{
+	font-size: 36px;
+	margin-top: 0;
+	margin-bottom: 18px;
+	color: #39f;
+}
+.banner__copy__text h4 {
+	font-size: 24px;
+	margin: 6px 0;
+}
+.banner__copy__text p {color: #f2f2f2; padding-bottom: 22px;}
+.banner__copy__button {
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 24px;
+	border: 2px solid #39f;
+}
+.banner__copy__button:hover{
+	background-color: #39f;
+}
+
+.box {
+	width: 100%;
+	text-align: center;
+	background:#00477d url('../images/fondo.png');
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 100px 20%;
+	margin: 70px 0;
+}
+.box h2 {
+	margin: 0;
+	font-size: 48px;
+}
+.box__button {
+	text-decoration: none;
+	color: #fff;
+	padding: 12px 36px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+}
+.box__button:hover{
+	background-color: #0082e6;
+	border: 2px solid #0082e6;
+}
+.box p {font-size: 18px ;line-height: 1.6; padding-bottom: 18px;}
+
+/*---- Panel ----------------------------------------------------------------------------------*/
+.panel__copy {
+	max-width: 800px; 
+	margin: 0 auto;
+	margin-top: -60px;
+	background-color: #fff;
+	padding: 20px 40px;
+	position: relative;
+	z-index: 1;
+}
+.panel__copy__meta {
+	font-size: 1em;
+	background-color: #387bae;
+	color: #fff;
+	padding: 2px 6px;
+}
+.panel__copy__title {
+	font-size: 36px;
+}
+
+
+/*---- Footer ---------------------------------------------------------------------------------*/
+.footer {
+	background: #0082e6;
+	color: #fff;
+	font-size: 1rem;
+	width: 100%;
+	margin-bottom: 0;
+	padding: 30px 60px 10px;
+}
+.footer__container{
+	display: flex;
+	justify-content: space-between;
+}
+.footer__left {text-align: left;}
+.footer__right {text-align: right; padding-top: 20px;}
+
+.footer .credits {
+	text-align: center;
+	padding-top: 6px;
+}
+
+.footer a{
+	font-size: 30px !important;
+	margin: 18px;
+	color: #fff;
+}
+.footer a:hover{
+	color: yellow;
+	border-bottom: 3px solid yellow;
+}
+
+
+/** Page */
+
+.panel-content {
+	width: 1160px;
+	margin: 40px auto;
+}
+
+.panel-page {
+	display: flex;
+	justify-content: space-between;
+}
+
+.panel-page__copy {
+	background-color: #fff;
+	padding: 12px 12px 12px 24px;
+}
+
+.panel-page__sep{
+	flex-basis: 4%;
+}
+
+aside {
+	flex-basis: 30%;
+	padding: 12px;
+	background-color: #fff;
+}
+
+@media only screen and (max-width: 1160px){
+	/* Panel */
+	.panel-content { width: 100%;	margin: 12px auto;}
+	.panel-page {
+		flex-direction:column-reverse;	
+	}
+	.panel-page__sep{ margin: 12px 0px;}
+	.panel-page__copy {padding: 24px;}
+	aside {padding: 24px;}
+	/*   */
+
+}
+
+@media only screen and (max-width: 768px){
+	.panel-page__sep{  display: none;}
+	aside {display: none;}
+
+	.cover__caption__copy h1 { font-size: 30px; }
+
+}
+
+/*---- Contatti -----------------------------------------------------------------------------------*/
+.contatti {
+	margin: 0 auto;
+	border-top: 16px solid #db09bf;
+	position: relative;
+	max-width: 800px;
+	margin-top: -16px;
+}
+.contatti__copy{
+	background: #fff;
+	padding: 40px 40px 20px;
+}
+
+.bottone-informazioni{
+	color: #fff;
+	background-color: #db09bf;
+	padding: 10px 36px;
+	text-decoration: none;
+	transition: .3s;
+	border-radius: 10px;
+	border: none;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.bottone-informazioni:hover{
+	background-color: #6f0961;
+}
+
+.table { width: 100%;}
+.table td{padding-bottom: 12px; padding-right: 6px;}
+.table td:nth-child(1){width: 20%;}
+.table td:nth-child(2){width: 80%;}
+.table input {font-size: 16px; padding: 6px; width: 100%;}
+.table input:hover{background-color: #f1c8ec;}
+

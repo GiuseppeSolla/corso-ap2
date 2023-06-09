@@ -1,0 +1,128 @@
+* { padding: 0; margin: 0; box-sizing: border-box;}
+body { background: #18191A; 
+  color: #b0b3b8; 
+  font-family: 'Montserrat', sans-serif; 
+}
+h1 { padding: 40px 0; text-align: center; 
+  text-transform: uppercase; font-size: 50px; 
+  color: #e4e6eb; 
+}
+h3 { color: #e4e6eb; padding-bottom: 20px; 
+  border-bottom: 1px solid #3a3b3c; margin-bottom: 20px; }
+h4 { color: #b0b3b8; }
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  width: 1160px;
+  padding-bottom: 40px;
+}
+
+.timeline::before{
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: -40px;
+  width: 2px;
+  height: 100%;
+  background-color: #3a3b3c;
+}
+
+.timeline ul {list-style: none;}
+.timeline li {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  background-color: #242526;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline li:nth-child(odd){
+  text-align: right;
+  margin-right: auto;
+  margin-left: -20px;  
+}
+
+.timeline li:nth-child(even){
+  text-align: left;
+  margin-left: auto;
+  margin-right: -20px;
+}
+
+.timeline-item { padding-bottom: 20px;}
+.timeline li:nth-child(odd)::before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -26px;
+  width: 10px;
+  height: 10px;
+  background-color: #4494ff;
+  border-radius: 50%;
+}
+
+.timeline li:nth-child(even)::before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -24px;
+  width: 10px;
+  height: 10px;
+  background-color: #4494ff;
+  border-radius: 50%;
+}
+
+.timeline li:nth-child(odd) .time{
+  position: absolute;
+  top: 12px;
+  right: -190px;
+  padding: 8px 16px;
+  background-color: #4e4f50;
+  border-radius: 18px;
+}
+
+.timeline li:nth-child(even) .time {
+  position: absolute;
+  top: 12px;
+  left: -190px;
+  padding: 8px 16px;
+  background-color: #4e4f50;
+  border-radius: 18px;
+}
+
+@media only screen and (max-width: 1200px){
+  .timeline{
+    width: 100%;
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  h3 {padding-top: 20px;}
+
+  .timeline li:nth-child(odd),
+  .timeline li:nth-child(even) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .timeline::before{left: 20px;}
+  .timeline li:nth-child(odd)::before{ left: -24px; }
+  
+  .timeline li:nth-child(odd)::before,
+  .timeline li:nth-child(even)::before{
+    top: -4px;
+  }
+
+  .timeline li:nth-child(odd) .time,
+  .timeline li:nth-child(even) .time {
+    top: -17px;
+    left: 40px;
+    right: inherit;
+  }
+}

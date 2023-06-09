@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/c6768ea133.js"></script>
+
+</head>
+<body>
+  
+  <header class="header header--single clearfix">
+    <a href="index.html" class="header__logo">Logo<span>Website</span></a>
+    <nav>
+      <a href="" class="header__icon-bar">
+        <span></span>
+        <span></span>
+      </a>
+      <ul class="header__menu">
+        <li class="header__menu__item"><a href="index.html">Home</a></li>
+        <li class="header__menu__item"><a href="single.html">Single</a></li>
+        <li class="header__menu__item"><a href="pages.html">Pages</a></li>
+        <li class="header__menu__item header__menu__item--visited"><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cover cover--contatti clearfix">
+		<div class="cover__filter"></div>
+		<div class="cover__caption">
+			<div class="cover__caption__copy">
+				<h1>Contatti</h1>
+				<h2>Se vuoi richiedere informazioni inserisci i dati richiesti e clicca su [Invia] </h2>
+			</div>
+		</div>
+	</section>
+
+  <article class="contatti">
+    <div class="contatti__copy">
+      <form method="post" action="http://www.andoria.it/risultato.php" id="formMain">
+        <table class="table">
+          <tr><td>Nome </td><td><input name="nome" required></td></tr>
+					<tr><td>Cognome </td><td><input name="cognome" required></td></tr>
+					<tr><td>Indirizzo </td><td><input name="Indirizzo" required></td></tr>
+					<tr><td>Telefono </td><td><input type="tel" name="telefono" required></td></tr>
+					<tr><td>Email </td><td><input type="email" name="email" required></td></tr>
+					<tr><td></td><td>
+						<button type="button" class="bottone-informazioni">Invia</button>
+					</td></tr>
+        </table>
+      </form>
+    </div>
+  </article>
+
+  <div style="height: 40px;"></div>
+
+  <!-- cards ------------------------------------------->
+	<section class="cards clearfix">
+		<div class="card">
+				<img class="card__image" src="https://source.unsplash.com/category/nature/400x260" alt="immagine card">
+				<div class="card__copy">
+					<h3>Titolo della card</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis ratione iste maiores ipsum pariatur odit explicabo</p>
+					<a href="#" class="card__button">Vai</a>
+				</div>
+		</div>
+		<div class="card">
+			<img class="card__image" src="https://source.unsplash.com/category/nature/400x260" alt="immagine card">
+			<div class="card__copy">
+				<h3>Titolo della card</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis ratione iste maiores ipsum pariatur odit explicabo</p>
+				<a href="#" class="card__button">Vai</a>
+			</div>
+		</div>
+		<div class="card">
+			<img class="card__image" src="https://source.unsplash.com/category/nature/400x260" alt="immagine card">
+			<div class="card__copy">
+				<h3>Titolo della card</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis ratione iste maiores ipsum pariatur odit explicabo</p>
+				<a href="#" class="card__button">Vai</a>
+			</div>
+		</div>
+	</section>
+
+
+  <div style="height: 40px;"></div>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__left">
+        <p>NOME AZIENDA</p>
+        <p>Tel. 0000 000000</p>
+        <p>P. Iva 00000000000</p>
+      </div>
+      <div class="footer__right">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <hr>
+    <p class="credits">Copyright 2023 Chi ha fatto il sito</p>
+  </footer>
+
+</body>
+</html>
